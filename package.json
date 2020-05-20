@@ -1,0 +1,30 @@
+{
+    "name": "lambda-localstack-dns-layers-repro",
+    "version": "0.0.1",
+    "description": "",
+    "dependencies": {
+        "chrome-aws-lambda": "^3.1.1",
+        "node-fetch": "^2.6.0",
+        "puppeteer-core": "^3.1.0"
+    },
+    "devDependencies": {
+        "@types/aws-lambda": "^8.10.51",
+        "@types/node": "^14.0.4",
+        "@types/node-fetch": "^2.5.7",
+        "@types/puppeteer": "^3.0.0",
+        "@types/puppeteer-core": "^2.0.0",
+        "aws-sdk": "^2.681.0",
+        "puppeteer": "^3.1.0",
+        "serverless": "^1.71.3",
+        "serverless-deployment-bucket": "^1.1.2",
+        "serverless-localstack": "^0.4.24",
+        "serverless-webpack": "^5.3.2",
+        "ts-loader": "^7.0.4",
+        "typescript": "^3.9.3",
+        "webpack": "^4.43.0",
+        "webpack-node-externals": "^1.7.2"
+    },
+    "author": "Dan Sowter",
+    "license": "MIT",
+    "private": true
+}

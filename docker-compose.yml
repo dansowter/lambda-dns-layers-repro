@@ -1,0 +1,18 @@
+version: "3.4"
+services:
+    localstack:
+        privileged: true
+        image: localstack/localstack:0.11.1
+        environment:
+            - DEBUG=1
+            - DEFAULT_REGION=us-east-1
+            - LAMBDA_EXECUTOR=docker
+            - LAMBDA_REMOTE_DOCKER=false
+            - LOCALSTACK_API_KEY
+            - SERVICES=s3,sns,sqs,ses,cloudformation,sts,iam,lambda,apigateway,edge,ssm
+        volumes:
+            - /var/run/docker.sock:/var/run/docker.sock
+            - /tmp/localstack:/tmp/localstack
+        ports:
+            - "4566:4566"
+            - "443:443"

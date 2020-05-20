@@ -1,0 +1,7 @@
+{
+    "Records": [
+        {
+            "body": "{\"destination\":\"http://localhost:4566/my-bucket/upload.pdf?AWSAccessKeyId=FAKE_AWS_ACCESS_KEY_ID&Signature=UlK%2BQsJ1Ta6%2FPjOcjh4nfb%2FW%2FiI%3D&Expires=1589973381\"}"
+        }
+    ]
+}

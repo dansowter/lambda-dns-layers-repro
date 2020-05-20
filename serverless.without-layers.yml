@@ -1,0 +1,73 @@
+functions:
+    render-pdfs:
+        role: "arn:aws:iam::${self:custom.aws-account.${self:provider.stage}}:role/render-pdfs"
+        handler: pdfs.render
+        events:
+            -   sqs: "arn:aws:sqs:${self:custom.aws-region.${self:provider.stage}}:${self:custom.aws-account.${self:provider.stage}}:pdfs-to-render"
+
+plugins:
+    - serverless-webpack
+    - serverless-localstack
+    - serverless-deployment-bucket
+
+provider:
+    name: aws
+    runtime: nodejs12.x
+    region: ${self:custom.aws-region.${self:provider.stage}}
+    deploymentBucket:
+        name: serverless-deployments
+        serverSideEncryption: AES256
+
+service:
+    name: repro
+
+package:
+    individually: true
+
+custom:
+    aws-account:
+        dev: "000000000000"
+    aws-region:
+        dev: "us-east-1"
+    webpack:
+        includeModules: true
+        packager: 'yarn'
+        webpackConfig: ./webpack.config.js
+    localstack:
+        debug: true
+        stages:
+            - dev
+        host: http://localhost
+        endpoints:
+            appsync: http://localhost:4566
+            athena: http://localhost:4566
+            cloudformation: http://localhost:4566
+            cloudfront: http://localhost:4566
+            cloudwatch: http://localhost:4566
+            cloudwatchlogs: http://localhost:4566
+            cognito-identity: http://localhost:4566
+            cognito-idp: http://localhost:4566
+            dynamodb: http://localhost:4566
+            ec2: http://localhost:4566
+            ecs: http://localhost:4566
+            eks: http://localhost:4566
+            elasticache: http://localhost:4566
+            es: http://localhost:4566
+            firehose: http://localhost:4566
+            iam: http://localhost:4566
+            iot: http://localhost:4566
+            kinesis: http://localhost:4566
+            kms: http://localhost:4566
+            lambda: http://localhost:4566
+            logs: http://localhost:4566
+            rds: http://localhost:4566
+            route53: http://localhost:4566
+            s3: http://localhost:4566
+            secretsmanager: http://localhost:4566
+            ses: http://localhost:4566
+            sns: http://localhost:4566
+            sqs: http://localhost:4566
+            ssm: http://localhost:4566
+            stepfunctions: http://localhost:4566
+            sts: http://localhost:4566
+            xray: http://localhost:4566
