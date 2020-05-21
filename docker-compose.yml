@@ -2,7 +2,7 @@ version: "3.4"
 services:
     localstack:
         privileged: true
-        image: localstack/localstack:0.11.1
+        image: localstack/localstack:latest
         environment:
             - DEBUG=1
             - DEFAULT_REGION=us-east-1

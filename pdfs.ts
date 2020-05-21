@@ -28,6 +28,8 @@ export const render: SQSHandler = async (event, _context) => {
 
             const stream = await page.pdf({ printBackground: true });
 
+            job.destination = job.destination.replace('localhost', process.env.LOCALSTACK_HOSTNAME);
+
             await fetch(job.destination, {
                 method: "PUT",
                 body: stream.toString("binary"),

@@ -1,0 +1,309 @@
+Removing repro_localstack_1 ... 
+[1A[2KRemoving repro_localstack_1 ... [32mdone[0m[1BRemoving network repro_default
+Creating network "repro_default" with the default driver
+Creating repro_localstack_1 ... 
+[1A[2KCreating repro_localstack_1 ... [32mdone[0m[1BAttaching to repro_localstack_1
+[36mlocalstack_1  |[0m Waiting for all LocalStack services to be ready
+[36mlocalstack_1  |[0m 2020-05-21 22:07:37,658 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
+[36mlocalstack_1  |[0m 2020-05-21 22:07:37,660 INFO supervisord started with pid 15
+[36mlocalstack_1  |[0m 2020-05-21 22:07:38,664 INFO spawned: 'dashboard' with pid 21
+[36mlocalstack_1  |[0m 2020-05-21 22:07:38,671 INFO spawned: 'infra' with pid 22
+[36mlocalstack_1  |[0m 2020-05-21 22:07:38,684 INFO success: dashboard entered RUNNING state, process has stayed up for > than 0 seconds (startsecs)
+[36mlocalstack_1  |[0m (. .venv/bin/activate; bin/localstack web)
+[36mlocalstack_1  |[0m 2020-05-21T22:07:39:DEBUG:bootstrap.py: Loading plugins - scope "commands", module "localstack_ext": <function register_localstack_commands at 0x7fa1d6083550>
+[36mlocalstack_1  |[0m LocalStack version: 0.11.1
+[36mlocalstack_1  |[0m 2020-05-21T22:07:39:DEBUG:bootstrap.py: Loading plugins - scope "services", module "localstack_ext": <function register_localstack_plugins at 0x7fa1d6436550>
+[36mlocalstack_1  |[0m 2020-05-21T22:07:39:DEBUG:bootstrap.py: Loading plugins - scope "services", module "localstack": <function register_localstack_plugins at 0x7fa1d60835e0>
+[36mlocalstack_1  |[0m (. .venv/bin/activate; exec bin/localstack start --host)
+[36mlocalstack_1  |[0m LocalStack version: 0.11.1
+[36mlocalstack_1  |[0m Starting local dev environment. CTRL-C to quit.
+[36mlocalstack_1  |[0m 2020-05-21T22:07:39:DEBUG:bootstrap.py: Loading plugins - scope "commands", module "localstack_ext": <function register_localstack_commands at 0x7fa36cbc2550>
+[36mlocalstack_1  |[0m 2020-05-21T22:07:39:DEBUG:bootstrap.py: Loading plugins - scope "services", module "localstack_ext": <function register_localstack_plugins at 0x7fa36cf75550>
+[36mlocalstack_1  |[0m 2020-05-21 22:07:40,248 INFO success: infra entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+[36mlocalstack_1  |[0m 2020-05-21T22:07:41:INFO:localstack.utils.common: Unable to store key/cert files for custom SSL certificate: [Errno 13] Permission denied: '/tmp/localstack/server.test.pem.key'
+[36mlocalstack_1  |[0m 2020-05-21T22:07:42:INFO:localstack_ext.bootstrap.licensing: Successfully activated API key
+[36mlocalstack_1  |[0m 2020-05-21T22:07:42:DEBUG:asyncio: Using selector: EpollSelector
+[36mlocalstack_1  |[0m Waiting for all LocalStack services to be ready
+[36mlocalstack_1  |[0m 2020-05-21T22:07:46:DEBUG:bootstrap.py: Loading plugins - scope "services", module "localstack": <function register_localstack_plugins at 0x7fa36cbc25e0>
+[36mlocalstack_1  |[0m 2020-05-21T22:07:46:DEBUG:bootstrap.py: Plugin loading took 7.0628509521484375 sec
+[36mlocalstack_1  |[0m Starting mock STS service in http ports 443 (recommended) and 4592 (deprecated)...
+[36mlocalstack_1  |[0m 2020-05-21T22:07:48:INFO:localstack.multiserver: Starting multi API server process on port 51492
+[36mlocalstack_1  |[0m Starting mock SES service in http ports 443 (recommended) and 4579 (deprecated)...
+[36mlocalstack_1  |[0m Starting DNS servers (tcp/udp port 53 on 0.0.0.0)...
+[36mlocalstack_1  |[0m Starting edge router (http port 4566)...
+[36mlocalstack_1  |[0m Starting edge router (https port 443)...
+[36mlocalstack_1  |[0m Starting mock API Gateway service in http ports 443 (recommended) and 4567 (deprecated)...
+[36mlocalstack_1  |[0m Starting mock CloudFormation service in http ports 443 (recommended) and 4581 (deprecated)...
+[36mlocalstack_1  |[0m 2020-05-21 22:07:49,375:API:  * Running on http://0.0.0.0:4592/ (Press CTRL+C to quit)
+[36mlocalstack_1  |[0m 2020-05-21 22:07:49,375:API:  * Running on http://0.0.0.0:4592/ (Press CTRL+C to quit)
+[36mlocalstack_1  |[0m 2020-05-21 22:07:49,375:API:  * Running on http://0.0.0.0:4592/ (Press CTRL+C to quit)
+[36mlocalstack_1  |[0m 2020-05-21 22:07:49,389:API:  * Running on http://0.0.0.0:4533/ (Press CTRL+C to quit)
+[36mlocalstack_1  |[0m 2020-05-21 22:07:49,389:API:  * Running on http://0.0.0.0:4533/ (Press CTRL+C to quit)
+[36mlocalstack_1  |[0m 2020-05-21 22:07:49,389:API:  * Running on http://0.0.0.0:4533/ (Press CTRL+C to quit)
+[36mlocalstack_1  |[0m 2020-05-21 22:07:49,438:API:  * Running on http://0.0.0.0:37387/ (Press CTRL+C to quit)
+[36mlocalstack_1  |[0m 2020-05-21 22:07:49,438:API:  * Running on http://0.0.0.0:37387/ (Press CTRL+C to quit)
+[36mlocalstack_1  |[0m 2020-05-21 22:07:49,438:API:  * Running on http://0.0.0.0:37387/ (Press CTRL+C to quit)
+[36mlocalstack_1  |[0m Starting mock IAM service in http ports 443 (recommended) and 4593 (deprecated)...
+[36mlocalstack_1  |[0m Starting mock Lambda service in http ports 443 (recommended) and 4574 (deprecated)...
+[36mlocalstack_1  |[0m Starting mock CloudWatch Logs service in http ports 443 (recommended) and 4586 (deprecated)...
+[36mlocalstack_1  |[0m Starting mock S3 service in http ports 443 (recommended) and 4572 (deprecated)...
+[36mlocalstack_1  |[0m Starting mock SNS service in http ports 443 (recommended) and 4575 (deprecated)...
+[36mlocalstack_1  |[0m Starting mock SQS service in http ports 443 (recommended) and 4576 (deprecated)...
+[36mlocalstack_1  |[0m Starting mock SSM service in http ports 443 (recommended) and 4583 (deprecated)...
+[36mlocalstack_1  |[0m 22:07:50.127 [main] INFO  org.elasticmq.server.Main$ - Starting ElasticMQ server (0.15.5) ...
+[36mlocalstack_1  |[0m 2020-05-21 22:07:49,508:API:  * Running on http://0.0.0.0:49431/ (Press CTRL+C to quit)
+[36mlocalstack_1  |[0m 2020-05-21 22:07:49,508:API:  * Running on http://0.0.0.0:49431/ (Press CTRL+C to quit)
+[36mlocalstack_1  |[0m 2020-05-21 22:07:49,508:API:  * Running on http://0.0.0.0:49431/ (Press CTRL+C to quit)
+[36mlocalstack_1  |[0m 22:07:50.577 [elasticmq-akka.actor.default-dispatcher-5] INFO  akka.event.slf4j.Slf4jLogger - Slf4jLogger started
+[36mlocalstack_1  |[0m 22:07:51.390 [elasticmq-akka.actor.default-dispatcher-6] INFO  o.e.rest.sqs.TheSQSRestServerBuilder - Started SQS rest server, bind address 0.0.0.0:38943, visible server address http://f13d1759337e:4576
+[36mlocalstack_1  |[0m 22:07:51.391 [main] INFO  org.elasticmq.server.Main$ - === ElasticMQ server (0.15.5) started in 1720 ms ===
+[36mlocalstack_1  |[0m 2020-05-21T22:07:50:ERROR:localstack.services.generic_proxy: Error forwarding request: MyHTTPConnectionPool(host='127.0.0.1', port=38943): Max retries exceeded with url: / (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7fa367625370>: Failed to establish a new connection: [Errno 111] Connection refused')) Traceback (most recent call last):
+[36mlocalstack_1  |[0m   File "/opt/code/localstack/.venv/lib/python3.8/site-packages/urllib3/connection.py", line 159, in _new_conn
+[36mlocalstack_1  |[0m     conn = connection.create_connection(
+[36mlocalstack_1  |[0m   File "/opt/code/localstack/.venv/lib/python3.8/site-packages/urllib3/util/connection.py", line 84, in create_connection
+[36mlocalstack_1  |[0m     raise err
+[36mlocalstack_1  |[0m   File "/opt/code/localstack/.venv/lib/python3.8/site-packages/urllib3/util/connection.py", line 74, in create_connection
+[36mlocalstack_1  |[0m     sock.connect(sa)
+[36mlocalstack_1  |[0m ConnectionRefusedError: [Errno 111] Connection refused
+[36mlocalstack_1  |[0m 
+[36mlocalstack_1  |[0m During handling of the above exception, another exception occurred:
+[36mlocalstack_1  |[0m 
+[36mlocalstack_1  |[0m Traceback (most recent call last):
+[36mlocalstack_1  |[0m   File "/opt/code/localstack/.venv/lib/python3.8/site-packages/urllib3/connectionpool.py", line 670, in urlopen
+[36mlocalstack_1  |[0m     httplib_response = self._make_request(
+[36mlocalstack_1  |[0m   File "/opt/code/localstack/.venv/lib/python3.8/site-packages/urllib3/connectionpool.py", line 392, in _make_request
+[36mlocalstack_1  |[0m     conn.request(method, url, **httplib_request_kw)
+[36mlocalstack_1  |[0m   File "/usr/lib/python3.8/http/client.py", line 1230, in request
+[36mlocalstack_1  |[0m     self._send_request(method, url, body, headers, encode_chunked)
+[36mlocalstack_1  |[0m   File "/usr/lib/python3.8/http/client.py", line 1276, in _send_request
+[36mlocalstack_1  |[0m     self.endheaders(body, encode_chunked=encode_chunked)
+[36mlocalstack_1  |[0m   File "/usr/lib/python3.8/http/client.py", line 1225, in endheaders
+[36mlocalstack_1  |[0m     self._send_output(message_body, encode_chunked=encode_chunked)
+[36mlocalstack_1  |[0m   File "/usr/lib/python3.8/http/client.py", line 1004, in _send_output
+[36mlocalstack_1  |[0m     self.send(msg)
+[36mlocalstack_1  |[0m   File "/usr/lib/python3.8/http/client.py", line 944, in send
+[36mlocalstack_1  |[0m     self.connect()
+[36mlocalstack_1  |[0m   File "/opt/code/localstack/.venv/lib/python3.8/site-packages/urllib3/connection.py", line 187, in connect
+[36mlocalstack_1  |[0m     conn = self._new_conn()
+[36mlocalstack_1  |[0m   File "/opt/code/localstack/.venv/lib/python3.8/site-packages/urllib3/connection.py", line 171, in _new_conn
+[36mlocalstack_1  |[0m     raise NewConnectionError(
+[36mlocalstack_1  |[0m urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPConnection object at 0x7fa367625370>: Failed to establish a new connection: [Errno 111] Connection refused
+[36mlocalstack_1  |[0m 
+[36mlocalstack_1  |[0m During handling of the above exception, another exception occurred:
+[36mlocalstack_1  |[0m 
+[36mlocalstack_1  |[0m Traceback (most recent call last):
+[36mlocalstack_1  |[0m   File "/opt/code/localstack/.venv/lib/python3.8/site-packages/requests/adapters.py", line 439, in send
+[36mlocalstack_1  |[0m     resp = conn.urlopen(
+[36mlocalstack_1  |[0m   File "/opt/code/localstack/.venv/lib/python3.8/site-packages/urllib3/connectionpool.py", line 724, in urlopen
+[36mlocalstack_1  |[0m     retries = retries.increment(
+[36mlocalstack_1  |[0m   File "/opt/code/localstack/.venv/lib/python3.8/site-packages/urllib3/util/retry.py", line 439, in increment
+[36mlocalstack_1  |[0m     raise MaxRetryError(_pool, url, error or ResponseError(cause))
+[36mlocalstack_1  |[0m urllib3.exceptions.MaxRetryError: MyHTTPConnectionPool(host='127.0.0.1', port=38943): Max retries exceeded with url: / (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7fa367625370>: Failed to establish a new connection: [Errno 111] Connection refused'))
+[36mlocalstack_1  |[0m 
+[36mlocalstack_1  |[0m During handling of the above exception, another exception occurred:
+[36mlocalstack_1  |[0m 
+[36mlocalstack_1  |[0m Traceback (most recent call last):
+[36mlocalstack_1  |[0m   File "/opt/code/localstack/localstack/services/generic_proxy.py", line 287, in forward
+[36mlocalstack_1  |[0m     response = self.method(request_url, data=data_to_send,
+[36mlocalstack_1  |[0m   File "/opt/code/localstack/.venv/lib/python3.8/site-packages/requests/api.py", line 119, in post
+[36mlocalstack_1  |[0m     return request('post', url, data=data, json=json, **kwargs)
+[36mlocalstack_1  |[0m   File "/opt/code/localstack/.venv/lib/python3.8/site-packages/requests/api.py", line 61, in request
+[36mlocalstack_1  |[0m     return session.request(method=method, url=url, **kwargs)
+[36mlocalstack_1  |[0m   File "/opt/code/localstack/.venv/lib/python3.8/site-packages/requests/sessions.py", line 530, in request
+[36mlocalstack_1  |[0m     resp = self.send(prep, **send_kwargs)
+[36mlocalstack_1  |[0m   File "/opt/code/localstack/.venv/lib/python3.8/site-packages/requests/sessions.py", line 643, in send
+[36mlocalstack_1  |[0m     r = adapter.send(request, **kwargs)
+[36mlocalstack_1  |[0m   File "/opt/code/localstack/.venv/lib/python3.8/site-packages/requests/adapters.py", line 516, in send
+[36mlocalstack_1  |[0m     raise ConnectionError(e, request=request)
+[36mlocalstack_1  |[0m requests.exceptions.ConnectionError: MyHTTPConnectionPool(host='127.0.0.1', port=38943): Max retries exceeded with url: / (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7fa367625370>: Failed to establish a new connection: [Errno 111] Connection refused'))
+[36mlocalstack_1  |[0m 
+[36mlocalstack_1  |[0m 2020-05-21T22:07:50:ERROR:localstack.services.generic_proxy: Error forwarding request: MyHTTPConnectionPool(host='127.0.0.1', port=38943): Max retries exceeded with url: / (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7fa36729a220>: Failed to establish a new connection: [Errno 111] Connection refused')) Traceback (most recent call last):
+[36mlocalstack_1  |[0m   File "/opt/code/localstack/.venv/lib/python3.8/site-packages/urllib3/connection.py", line 159, in _new_conn
+[36mlocalstack_1  |[0m     conn = connection.create_connection(
+[36mlocalstack_1  |[0m   File "/opt/code/localstack/.venv/lib/python3.8/site-packages/urllib3/util/connection.py", line 84, in create_connection
+[36mlocalstack_1  |[0m     raise err
+[36mlocalstack_1  |[0m   File "/opt/code/localstack/.venv/lib/python3.8/site-packages/urllib3/util/connection.py", line 74, in create_connection
+[36mlocalstack_1  |[0m     sock.connect(sa)
+[36mlocalstack_1  |[0m ConnectionRefusedError: [Errno 111] Connection refused
+[36mlocalstack_1  |[0m 
+[36mlocalstack_1  |[0m During handling of the above exception, another exception occurred:
+[36mlocalstack_1  |[0m 
+[36mlocalstack_1  |[0m Traceback (most recent call last):
+[36mlocalstack_1  |[0m   File "/opt/code/localstack/.venv/lib/python3.8/site-packages/urllib3/connectionpool.py", line 670, in urlopen
+[36mlocalstack_1  |[0m     httplib_response = self._make_request(
+[36mlocalstack_1  |[0m   File "/opt/code/localstack/.venv/lib/python3.8/site-packages/urllib3/connectionpool.py", line 392, in _make_request
+[36mlocalstack_1  |[0m     conn.request(method, url, **httplib_request_kw)
+[36mlocalstack_1  |[0m   File "/usr/lib/python3.8/http/client.py", line 1230, in request
+[36mlocalstack_1  |[0m     self._send_request(method, url, body, headers, encode_chunked)
+[36mlocalstack_1  |[0m   File "/usr/lib/python3.8/http/client.py", line 1276, in _send_request
+[36mlocalstack_1  |[0m     self.endheaders(body, encode_chunked=encode_chunked)
+[36mlocalstack_1  |[0m   File "/usr/lib/python3.8/http/client.py", line 1225, in endheaders
+[36mlocalstack_1  |[0m     self._send_output(message_body, encode_chunked=encode_chunked)
+[36mlocalstack_1  |[0m   File "/usr/lib/python3.8/http/client.py", line 1004, in _send_output
+[36mlocalstack_1  |[0m     self.send(msg)
+[36mlocalstack_1  |[0m   File "/usr/lib/python3.8/http/client.py", line 944, in send
+[36mlocalstack_1  |[0m     self.connect()
+[36mlocalstack_1  |[0m   File "/opt/code/localstack/.venv/lib/python3.8/site-packages/urllib3/connection.py", line 187, in connect
+[36mlocalstack_1  |[0m     conn = self._new_conn()
+[36mlocalstack_1  |[0m   File "/opt/code/localstack/.venv/lib/python3.8/site-packages/urllib3/connection.py", line 171, in _new_conn
+[36mlocalstack_1  |[0m     raise NewConnectionError(
+[36mlocalstack_1  |[0m urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPConnection object at 0x7fa36729a220>: Failed to establish a new connection: [Errno 111] Connection refused
+[36mlocalstack_1  |[0m 
+[36mlocalstack_1  |[0m During handling of the above exception, another exception occurred:
+[36mlocalstack_1  |[0m 
+[36mlocalstack_1  |[0m Traceback (most recent call last):
+[36mlocalstack_1  |[0m   File "/opt/code/localstack/.venv/lib/python3.8/site-packages/requests/adapters.py", line 439, in send
+[36mlocalstack_1  |[0m     resp = conn.urlopen(
+[36mlocalstack_1  |[0m   File "/opt/code/localstack/.venv/lib/python3.8/site-packages/urllib3/connectionpool.py", line 724, in urlopen
+[36mlocalstack_1  |[0m     retries = retries.increment(
+[36mlocalstack_1  |[0m   File "/opt/code/localstack/.venv/lib/python3.8/site-packages/urllib3/util/retry.py", line 439, in increment
+[36mlocalstack_1  |[0m     raise MaxRetryError(_pool, url, error or ResponseError(cause))
+[36mlocalstack_1  |[0m urllib3.exceptions.MaxRetryError: MyHTTPConnectionPool(host='127.0.0.1', port=38943): Max retries exceeded with url: / (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7fa36729a220>: Failed to establish a new connection: [Errno 111] Connection refused'))
+[36mlocalstack_1  |[0m 
+[36mlocalstack_1  |[0m During handling of the above exception, another exception occurred:
+[36mlocalstack_1  |[0m 
+[36mlocalstack_1  |[0m Traceback (most recent call last):
+[36mlocalstack_1  |[0m   File "/opt/code/localstack/localstack/services/generic_proxy.py", line 287, in forward
+[36mlocalstack_1  |[0m     response = self.method(request_url, data=data_to_send,
+[36mlocalstack_1  |[0m   File "/opt/code/localstack/.venv/lib/python3.8/site-packages/requests/api.py", line 119, in post
+[36mlocalstack_1  |[0m     return request('post', url, data=data, json=json, **kwargs)
+[36mlocalstack_1  |[0m   File "/opt/code/localstack/.venv/lib/python3.8/site-packages/requests/api.py", line 61, in request
+[36mlocalstack_1  |[0m     return session.request(method=method, url=url, **kwargs)
+[36mlocalstack_1  |[0m   File "/opt/code/localstack/.venv/lib/python3.8/site-packages/requests/sessions.py", line 530, in request
+[36mlocalstack_1  |[0m     resp = self.send(prep, **send_kwargs)
+[36mlocalstack_1  |[0m   File "/opt/code/localstack/.venv/lib/python3.8/site-packages/requests/sessions.py", line 643, in send
+[36mlocalstack_1  |[0m     r = adapter.send(request, **kwargs)
+[36mlocalstack_1  |[0m   File "/opt/code/localstack/.venv/lib/python3.8/site-packages/requests/adapters.py", line 516, in send
+[36mlocalstack_1  |[0m     raise ConnectionError(e, request=request)
+[36mlocalstack_1  |[0m requests.exceptions.ConnectionError: MyHTTPConnectionPool(host='127.0.0.1', port=38943): Max retries exceeded with url: / (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7fa36729a220>: Failed to establish a new connection: [Errno 111] Connection refused'))
+[36mlocalstack_1  |[0m 
+[36mlocalstack_1  |[0m 2020-05-21T22:07:51:ERROR:localstack.services.generic_proxy: Error forwarding request: MyHTTPConnectionPool(host='127.0.0.1', port=38943): Max retries exceeded with url: / (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7fa3676129d0>: Failed to establish a new connection: [Errno 111] Connection refused')) Traceback (most recent call last):
+[36mlocalstack_1  |[0m   File "/opt/code/localstack/.venv/lib/python3.8/site-packages/urllib3/connection.py", line 159, in _new_conn
+[36mlocalstack_1  |[0m     conn = connection.create_connection(
+[36mlocalstack_1  |[0m   File "/opt/code/localstack/.venv/lib/python3.8/site-packages/urllib3/util/connection.py", line 84, in create_connection
+[36mlocalstack_1  |[0m     raise err
+[36mlocalstack_1  |[0m   File "/opt/code/localstack/.venv/lib/python3.8/site-packages/urllib3/util/connection.py", line 74, in create_connection
+[36mlocalstack_1  |[0m     sock.connect(sa)
+[36mlocalstack_1  |[0m ConnectionRefusedError: [Errno 111] Connection refused
+[36mlocalstack_1  |[0m 
+[36mlocalstack_1  |[0m During handling of the above exception, another exception occurred:
+[36mlocalstack_1  |[0m 
+[36mlocalstack_1  |[0m Traceback (most recent call last):
+[36mlocalstack_1  |[0m   File "/opt/code/localstack/.venv/lib/python3.8/site-packages/urllib3/connectionpool.py", line 670, in urlopen
+[36mlocalstack_1  |[0m     httplib_response = self._make_request(
+[36mlocalstack_1  |[0m   File "/opt/code/localstack/.venv/lib/python3.8/site-packages/urllib3/connectionpool.py", line 392, in _make_request
+[36mlocalstack_1  |[0m     conn.request(method, url, **httplib_request_kw)
+[36mlocalstack_1  |[0m   File "/usr/lib/python3.8/http/client.py", line 1230, in request
+[36mlocalstack_1  |[0m     self._send_request(method, url, body, headers, encode_chunked)
+[36mlocalstack_1  |[0m   File "/usr/lib/python3.8/http/client.py", line 1276, in _send_request
+[36mlocalstack_1  |[0m     self.endheaders(body, encode_chunked=encode_chunked)
+[36mlocalstack_1  |[0m   File "/usr/lib/python3.8/http/client.py", line 1225, in endheaders
+[36mlocalstack_1  |[0m     self._send_output(message_body, encode_chunked=encode_chunked)
+[36mlocalstack_1  |[0m   File "/usr/lib/python3.8/http/client.py", line 1004, in _send_output
+[36mlocalstack_1  |[0m     self.send(msg)
+[36mlocalstack_1  |[0m   File "/usr/lib/python3.8/http/client.py", line 944, in send
+[36mlocalstack_1  |[0m     self.connect()
+[36mlocalstack_1  |[0m   File "/opt/code/localstack/.venv/lib/python3.8/site-packages/urllib3/connection.py", line 187, in connect
+[36mlocalstack_1  |[0m     conn = self._new_conn()
+[36mlocalstack_1  |[0m   File "/opt/code/localstack/.venv/lib/python3.8/site-packages/urllib3/connection.py", line 171, in _new_conn
+[36mlocalstack_1  |[0m     raise NewConnectionError(
+[36mlocalstack_1  |[0m urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPConnection object at 0x7fa3676129d0>: Failed to establish a new connection: [Errno 111] Connection refused
+[36mlocalstack_1  |[0m 
+[36mlocalstack_1  |[0m During handling of the above exception, another exception occurred:
+[36mlocalstack_1  |[0m 
+[36mlocalstack_1  |[0m Traceback (most recent call last):
+[36mlocalstack_1  |[0m   File "/opt/code/localstack/.venv/lib/python3.8/site-packages/requests/adapters.py", line 439, in send
+[36mlocalstack_1  |[0m     resp = conn.urlopen(
+[36mlocalstack_1  |[0m   File "/opt/code/localstack/.venv/lib/python3.8/site-packages/urllib3/connectionpool.py", line 724, in urlopen
+[36mlocalstack_1  |[0m     retries = retries.increment(
+[36mlocalstack_1  |[0m   File "/opt/code/localstack/.venv/lib/python3.8/site-packages/urllib3/util/retry.py", line 439, in increment
+[36mlocalstack_1  |[0m     raise MaxRetryError(_pool, url, error or ResponseError(cause))
+[36mlocalstack_1  |[0m urllib3.exceptions.MaxRetryError: MyHTTPConnectionPool(host='127.0.0.1', port=38943): Max retries exceeded with url: / (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7fa3676129d0>: Failed to establish a new connection: [Errno 111] Connection refused'))
+[36mlocalstack_1  |[0m 
+[36mlocalstack_1  |[0m During handling of the above exception, another exception occurred:
+[36mlocalstack_1  |[0m 
+[36mlocalstack_1  |[0m Traceback (most recent call last):
+[36mlocalstack_1  |[0m   File "/opt/code/localstack/localstack/services/generic_proxy.py", line 287, in forward
+[36mlocalstack_1  |[0m     response = self.method(request_url, data=data_to_send,
+[36mlocalstack_1  |[0m   File "/opt/code/localstack/.venv/lib/python3.8/site-packages/requests/api.py", line 119, in post
+[36mlocalstack_1  |[0m     return request('post', url, data=data, json=json, **kwargs)
+[36mlocalstack_1  |[0m   File "/opt/code/localstack/.venv/lib/python3.8/site-packages/requests/api.py", line 61, in request
+[36mlocalstack_1  |[0m     return session.request(method=method, url=url, **kwargs)
+[36mlocalstack_1  |[0m   File "/opt/code/localstack/.venv/lib/python3.8/site-packages/requests/sessions.py", line 530, in request
+[36mlocalstack_1  |[0m     resp = self.send(prep, **send_kwargs)
+[36mlocalstack_1  |[0m   File "/opt/code/localstack/.venv/lib/python3.8/site-packages/requests/sessions.py", line 643, in send
+[36mlocalstack_1  |[0m     r = adapter.send(request, **kwargs)
+[36mlocalstack_1  |[0m   File "/opt/code/localstack/.venv/lib/python3.8/site-packages/requests/adapters.py", line 516, in send
+[36mlocalstack_1  |[0m     raise ConnectionError(e, request=request)
+[36mlocalstack_1  |[0m requests.exceptions.ConnectionError: MyHTTPConnectionPool(host='127.0.0.1', port=38943): Max retries exceeded with url: / (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7fa3676129d0>: Failed to establish a new connection: [Errno 111] Connection refused'))
+[36mlocalstack_1  |[0m 
+[36mlocalstack_1  |[0m Waiting for all LocalStack services to be ready
+[36mlocalstack_1  |[0m 22:07:53.519 [elasticmq-akka.actor.default-dispatcher-8] INFO  o.elasticmq.actor.QueueManagerActor - Creating queue QueueData(us-east-1_pdfs-to-render,MillisVisibilityTimeout(30000),PT0S,PT0S,2020-05-21T22:07:53.490Z,2020-05-21T22:07:53.490Z,None,false,false,None,None,Map())
+[36mlocalstack_1  |[0m Ready.
+[36mlocalstack_1  |[0m 2020-05-21T22:07:59:DEBUG:localstack.services.cloudformation.cloudformation_listener: Error response for CloudFormation action "DescribeStacks" (400) POST /: b'<ErrorResponse xmlns="http://cloudformation.amazonaws.com/doc/2010-05-15/">\n  <Error>\n    <Type>Sender</Type>\n    <Code>ValidationError</Code>\n    <Message>Stack with id repro-dev does not exist</Message>\n  </Error>\n  <RequestId>cf4c737e-5ae2-11e4-a7c9-ad44eEXAMPLE</RequestId>\n</ErrorResponse>'
+[36mlocalstack_1  |[0m 2020-05-21T22:07:59:DEBUG:localstack.services.cloudformation.cloudformation_listener: Error response for CloudFormation action "DescribeStacks" (400) POST /: b'<ErrorResponse xmlns="http://cloudformation.amazonaws.com/doc/2010-05-15/">\n  <Error>\n    <Type>Sender</Type>\n    <Code>ValidationError</Code>\n    <Message>Stack with id repro-dev does not exist</Message>\n  </Error>\n  <RequestId>cf4c737e-5ae2-11e4-a7c9-ad44eEXAMPLE</RequestId>\n</ErrorResponse>'
+[36mlocalstack_1  |[0m 2020-05-21T22:07:59:WARNING:localstack.services.awslambda.lambda_api: Function not found: arn:aws:lambda:us-east-1:000000000000:function:repro-dev-render-pdfs
+[36mlocalstack_1  |[0m 2020-05-21T22:07:59:DEBUG:localstack.services.cloudformation.cloudformation_listener: Download CloudFormation template content from local S3: serverless-deployments - serverless/repro/dev/1590098878917-2020-05-21T22:07:58.917Z/compiled-cloudformation-template.json
+[36mlocalstack_1  |[0m 2020-05-21T22:07:59:DEBUG:localstack.services.cloudformation.cloudformation_listener: Download CloudFormation template content from local S3: serverless-deployments - serverless/repro/dev/1590098878917-2020-05-21T22:07:58.917Z/compiled-cloudformation-template.json
+[36mlocalstack_1  |[0m 2020-05-21T22:07:59:DEBUG:localstack.services.cloudformation.cloudformation_starter: Currently processing stack resource repro-dev/RenderDashpdfsLogGroup: None
+[36mlocalstack_1  |[0m 2020-05-21T22:07:59:DEBUG:localstack.services.cloudformation.cloudformation_starter: Deploying CloudFormation resource (update=False, exists=False, updateable=False): {'Type': 'AWS::Logs::LogGroup', 'Properties': {'LogGroupName': '/aws/lambda/repro-dev-render-pdfs'}}
+[36mlocalstack_1  |[0m 2020-05-21T22:07:59:DEBUG:localstack.utils.cloudformation.template_deployer: Running action "create" for resource type "Logs::LogGroup" id "RenderDashpdfsLogGroup"
+[36mlocalstack_1  |[0m 2020-05-21T22:07:59:DEBUG:localstack.utils.cloudformation.template_deployer: Request for resource type "Logs::LogGroup" in region us-east-1: create_log_group {'logGroupName': '/aws/lambda/repro-dev-render-pdfs'}
+[36mlocalstack_1  |[0m 2020-05-21T22:07:59:DEBUG:localstack.services.cloudformation.cloudformation_starter: Currently processing stack resource repro-dev/ChromeLambdaLayer: None
+[36mlocalstack_1  |[0m 2020-05-21T22:07:59:WARNING:localstack.utils.cloudformation.template_deployer: Unexpected resource type Lambda::LayerVersion when resolving references of resource ChromeLambdaLayer: {'Type': 'AWS::Lambda::LayerVersion', 'Properties': {'Content': {'S3Bucket': 'serverless-deployments', 'S3Key': 'serverless/repro/dev/1590098878917-2020-05-21T22:07:58.917Z/chrome_aws_lambda.zip'}, 'LayerName': 'chrome', 'CompatibleRuntimes': ['nodejs12.x']}}
+[36mlocalstack_1  |[0m 2020-05-21T22:07:59:DEBUG:localstack.services.cloudformation.cloudformation_starter: Deploying CloudFormation resource (update=False, exists=False, updateable=False): {'Type': 'AWS::Lambda::LayerVersion', 'Properties': {'Content': {'S3Bucket': 'serverless-deployments', 'S3Key': 'serverless/repro/dev/1590098878917-2020-05-21T22:07:58.917Z/chrome_aws_lambda.zip'}, 'LayerName': 'chrome', 'CompatibleRuntimes': ['nodejs12.x']}}
+[36mlocalstack_1  |[0m 2020-05-21T22:07:59:DEBUG:localstack.utils.cloudformation.template_deployer: Running action "create" for resource type "Lambda::LayerVersion" id "ChromeLambdaLayer"
+[36mlocalstack_1  |[0m 2020-05-21T22:07:59:DEBUG:localstack.utils.cloudformation.template_deployer: Request for resource type "Lambda::LayerVersion" in region us-east-1: publish_layer_version {'Content': {'S3Bucket': 'serverless-deployments', 'S3Key': 'serverless/repro/dev/1590098878917-2020-05-21T22:07:58.917Z/chrome_aws_lambda.zip'}, 'LayerName': 'chrome', 'CompatibleRuntimes': ['nodejs12.x']}
+[36mlocalstack_1  |[0m 2020-05-21T22:08:00:WARNING:urllib3.connectionpool: Connection pool is full, discarding connection: f13d1759337e
+[36mlocalstack_1  |[0m 2020-05-21T22:08:00:DEBUG:localstack.services.cloudformation.cloudformation_starter: Currently processing stack resource repro-dev/RenderDashpdfsLambdaFunction: None
+[36mlocalstack_1  |[0m 2020-05-21T22:08:00:WARNING:localstack.services.awslambda.lambda_api: Function not found: arn:aws:lambda:us-east-1:000000000000:function:repro-dev-render-pdfs
+[36mlocalstack_1  |[0m 2020-05-21T22:08:00:DEBUG:localstack.services.cloudformation.cloudformation_starter: Deploying CloudFormation resource (update=False, exists=False, updateable=False): {'Type': 'AWS::Lambda::Function', 'Properties': {'Code': {'S3Bucket': 'serverless-deployments', 'S3Key': 'serverless/repro/dev/1590098878917-2020-05-21T22:07:58.917Z/render-pdfs.zip'}, 'FunctionName': 'repro-dev-render-pdfs', 'Handler': 'pdfs.render', 'MemorySize': 1024, 'Role': 'arn:aws:iam::000000000000:role/render-pdfs', 'Runtime': 'nodejs12.x', 'Timeout': 6, 'Layers': ['arn:aws:lambda:us-east-1:000000000000:layer:chrome']}, 'DependsOn': ['RenderDashpdfsLogGroup']}
+[36mlocalstack_1  |[0m 2020-05-21T22:08:00:DEBUG:localstack.utils.cloudformation.template_deployer: Running action "create" for resource type "Lambda::Function" id "RenderDashpdfsLambdaFunction"
+[36mlocalstack_1  |[0m 2020-05-21T22:08:00:DEBUG:localstack.utils.cloudformation.template_deployer: Request for resource type "Lambda::Function" in region us-east-1: create_function {'FunctionName': 'repro-dev-render-pdfs', 'Runtime': 'nodejs12.x', 'Role': 'arn:aws:iam::000000000000:role/render-pdfs', 'Handler': 'pdfs.render', 'Code': {'S3Bucket': 'serverless-deployments', 'S3Key': 'serverless/repro/dev/1590098878917-2020-05-21T22:07:58.917Z/render-pdfs.zip'}, 'Timeout': 6, 'MemorySize': 1024, 'Layers': ['arn:aws:lambda:us-east-1:000000000000:layer:chrome']}
+[36mlocalstack_1  |[0m 2020-05-21T22:08:00:DEBUG:localstack.services.cloudformation.cloudformation_starter: Currently processing stack resource repro-dev/RenderDashpdfsLambdaVersionyXYrzf9rroIam95p7pffDEh49ZYbNO9TADKxhyMTNVk: None
+[36mlocalstack_1  |[0m 2020-05-21T22:08:00:DEBUG:localstack.services.cloudformation.cloudformation_starter: Resource RenderDashpdfsLambdaVersionyXYrzf9rroIam95p7pffDEh49ZYbNO9TADKxhyMTNVk need not be deployed (is_updateable=False): {'Type': 'AWS::Lambda::Version', 'DeletionPolicy': 'Retain', 'Properties': {'FunctionName': 'repro-dev-render-pdfs', 'CodeSha256': 'glneb5peWAUuc4Mixwl5yXRkY4ZJQPwgq8qMZnAI39g='}} True
+[36mlocalstack_1  |[0m 2020-05-21T22:08:00:DEBUG:localstack.services.cloudformation.cloudformation_starter: Currently processing stack resource repro-dev/RenderDashpdfsEventSourceMappingSQSPdfstorender: None
+[36mlocalstack_1  |[0m 2020-05-21T22:08:00:DEBUG:localstack.services.cloudformation.cloudformation_starter: Deploying CloudFormation resource (update=False, exists=False, updateable=False): {'Type': 'AWS::Lambda::EventSourceMapping', 'DependsOn': [], 'Properties': {'BatchSize': 10, 'EventSourceArn': 'arn:aws:sqs:us-east-1:000000000000:pdfs-to-render', 'FunctionName': 'arn:aws:lambda:us-east-1:123456789012:function:repro-dev-render-pdfs', 'Enabled': True, 'StartingPosition': 'LATEST'}}
+[36mlocalstack_1  |[0m 2020-05-21T22:08:00:DEBUG:localstack.utils.cloudformation.template_deployer: Running action "create" for resource type "Lambda::EventSourceMapping" id "RenderDashpdfsEventSourceMappingSQSPdfstorender"
+[36mlocalstack_1  |[0m 2020-05-21T22:08:00:DEBUG:localstack.utils.cloudformation.template_deployer: Request for resource type "Lambda::EventSourceMapping" in region us-east-1: create_event_source_mapping {'FunctionName': 'arn:aws:lambda:us-east-1:000000000000:function:repro-dev-render-pdfs', 'EventSourceArn': 'arn:aws:sqs:us-east-1:000000000000:pdfs-to-render', 'StartingPosition': 'LATEST', 'Enabled': True, 'BatchSize': 10}
+[36mlocalstack_1  |[0m 2020-05-21T22:08:00:WARNING:localstack.services.cloudformation.cloudformation_starter: Unable to determine physical_resource_id for resource <class 'moto.awslambda.models.EventSourceMapping'>
+[36mlocalstack_1  |[0m 2020-05-21T22:08:00:WARNING:localstack.services.cloudformation.cloudformation_starter: Unable to resolve "Ref" attribute for: {'Ref': 'RenderDashpdfsLambdaVersionyXYrzf9rroIam95p7pffDEh49ZYbNO9TADKxhyMTNVk'} - RenderDashpdfsLambdaVersionyXYrzf9rroIam95p7pffDEh49ZYbNO9TADKxhyMTNVk - <class 'moto.awslambda.models.LambdaVersion'>
+[36mlocalstack_1  |[0m 2020-05-21T22:08:00:DEBUG:localstack.services.cloudformation.cloudformation_starter: Running CloudFormation stack deployment loop iteration 1
+[36mlocalstack_1  |[0m 2020-05-21T22:08:07:DEBUG:localstack.services.awslambda.lambda_api: Found 1 source mappings for event from SQS queue arn:aws:sqs:us-east-1:000000000000:pdfs-to-render: ['arn:aws:lambda:us-east-1:000000000000:function:repro-dev-render-pdfs']
+[36mlocalstack_1  |[0m 2020-05-21T22:08:07:DEBUG:localstack.services.awslambda.lambda_api: Starting SQS message polling thread for Lambda API
+[36mlocalstack_1  |[0m 2020-05-21T22:08:07:DEBUG:localstack.services.awslambda.lambda_executors: Lambda executed in Event (asynchronous) mode, no response will be returned to caller
+[36mlocalstack_1  |[0m 2020-05-21T22:08:07:INFO:localstack.services.awslambda.lambda_executors: Running lambda cmd: docker run --user=root --entrypoint=/tmp/localstack/d403b436.sh --dns 127.0.0.1 -v /tmp/localstack:/tmp/localstack -i  -v "/tmp/tmpil9l8us2":/var/task -e DOCKER_LAMBDA_USE_STDIN="$DOCKER_LAMBDA_USE_STDIN" -e HOSTNAME="$HOSTNAME" -e LOCALSTACK_HOSTNAME="$LOCALSTACK_HOSTNAME" -e _HANDLER="$_HANDLER" -e AWS_LAMBDA_FUNCTION_TIMEOUT="$AWS_LAMBDA_FUNCTION_TIMEOUT" -e AWS_LAMBDA_FUNCTION_NAME="$AWS_LAMBDA_FUNCTION_NAME" -e AWS_LAMBDA_FUNCTION_VERSION="$AWS_LAMBDA_FUNCTION_VERSION" -e AWS_LAMBDA_FUNCTION_INVOKED_ARN="$AWS_LAMBDA_FUNCTION_INVOKED_ARN" -e NODE_TLS_REJECT_UNAUTHORIZED="$NODE_TLS_REJECT_UNAUTHORIZED"  --rm "localstack/lambda:nodejs12.x" "pdfs.render"
+[36mlocalstack_1  |[0m 2020-05-21T22:08:11:DEBUG:localstack.services.awslambda.lambda_executors: Lambda arn:aws:lambda:us-east-1:000000000000:function:repro-dev-render-pdfs result / log output:
+[36mlocalstack_1  |[0m {"errorType":"Runtime.ImportModuleError","errorMessage":"Error: Cannot find module 'pdfs'\nRequire stack:\n- /var/runtime/UserFunction.js\n- /var/runtime/index.js"}
+[36mlocalstack_1  |[0m > WARNING: Localhost DNS setting (--dns=127.0.0.1) may fail in containers.
+[36mlocalstack_1  |[0m > 2020-05-21T22:08:10.609Z	undefined	ERROR	Uncaught Exception 	{"errorType":"Runtime.ImportModuleError","errorMessage":"Error: Cannot find module 'pdfs'\nRequire stack:\n- /var/runtime/UserFunction.js\n- /var/runtime/index.js","stack":["Runtime.ImportModuleError: Error: Cannot find module 'pdfs'","Require stack:","- /var/runtime/UserFunction.js","- /var/runtime/index.js","    at _loadUserApp (/var/runtime/UserFunction.js:100:13)","    at Object.module.exports.load (/var/runtime/UserFunction.js:140:17)","    at Object.<anonymous> (/var/runtime/index.js:43:30)","    at Module._compile (internal/modules/cjs/loader.js:956:30)","    at Object.Module._extensions..js (internal/modules/cjs/loader.js:973:10)","    at Module.load (internal/modules/cjs/loader.js:812:32)","    at Function.Module._load (internal/modules/cjs/loader.js:724:14)","    at Function.Module.runMain (internal/modules/cjs/loader.js:1025:10)","    at internal/main/run_main_module.js:17:11"]}
+[36mlocalstack_1  |[0m > [32mSTART RequestId: 1ed14f12-3c01-1a80-c699-dcba037129e2 Version: $LATEST[0m
+[36mlocalstack_1  |[0m > [32mEND RequestId: 1ed14f12-3c01-1a80-c699-dcba037129e2[0m
+[36mlocalstack_1  |[0m > [32mREPORT RequestId: 1ed14f12-3c01-1a80-c699-dcba037129e2	Init Duration: 2268.44 ms	Duration: 0.29 ms	Billed Duration: 100 ms	Memory Size: 1536 MB	Max Memory Used: 0 MB	[0m
+[36mlocalstack_1  |[0m > Starting daemons...
+[36mlocalstack_1  |[0m > Starting server loop on UDP port 2000
+[36mlocalstack_1  |[0m > Starting DNS server loop on UDP port 53
+[36mlocalstack_1  |[0m 2020-05-21T22:08:11:WARNING:bootstrap.py: Thread run method <function LambdaExecutor.execute.<locals>.do_execute at 0x7fa36701a430>(None) failed: Traceback (most recent call last):
+[36mlocalstack_1  |[0m   File "/opt/code/localstack/localstack/utils/bootstrap.py", line 498, in run
+[36mlocalstack_1  |[0m     self.func(self.params)
+[36mlocalstack_1  |[0m   File "/opt/code/localstack/localstack/services/awslambda/lambda_executors.py", line 120, in do_execute
+[36mlocalstack_1  |[0m     raise e
+[36mlocalstack_1  |[0m   File "/opt/code/localstack/localstack/services/awslambda/lambda_executors.py", line 108, in do_execute
+[36mlocalstack_1  |[0m     result = self._execute(func_arn, func_details, event, context, version)
+[36mlocalstack_1  |[0m   File "/opt/code/localstack/localstack/services/awslambda/lambda_executors.py", line 257, in _execute
+[36mlocalstack_1  |[0m     result = self.run_lambda_executor(cmd, stdin, env_vars=environment, func_details=func_details)
+[36mlocalstack_1  |[0m   File "/opt/code/localstack/localstack/services/awslambda/lambda_executors.py", line 170, in run_lambda_executor
+[36mlocalstack_1  |[0m     raise Exception('Lambda process returned error status code: %s. Result: %s. Output:\n%s' %
+[36mlocalstack_1  |[0m Exception: Lambda process returned error status code: 1. Result: {"errorType":"Runtime.ImportModuleError","errorMessage":"Error: Cannot find module 'pdfs'\nRequire stack:\n- /var/runtime/UserFunction.js\n- /var/runtime/index.js"}. Output:
+[36mlocalstack_1  |[0m WARNING: Localhost DNS setting (--dns=127.0.0.1) may fail in containers.
+[36mlocalstack_1  |[0m 2020-05-21T22:08:10.609Z	undefined	ERROR	Uncaught Exception 	{"errorType":"Runtime.ImportModuleError","errorMessage":"Error: Cannot find module 'pdfs'\nRequire stack:\n- /var/runtime/UserFunction.js\n- /var/runtime/index.js","stack":["Runtime.ImportModuleError: Error: Cannot find module 'pdfs'","Require stack:","- /var/runtime/UserFunction.js","- /var/runtime/index.js","    at _loadUserApp (/var/runtime/UserFunction.js:100:13)","    at Object.module.exports.load (/var/runtime/UserFunction.js:140:17)","    at Object.<anonymous> (/var/runtime/index.js:43:30)","    at Module._compile (internal/modules/cjs/loader.js:956:30)","    at Object.Module._extensions..js (internal/modules/cjs/loader.js:973:10)","    at Module.load (internal/modules/cjs/loader.js:812:32)","    at Function.Module._load (internal/modules/cjs/loader.js:724:14)","    at Function.Module.runMain (internal/modules/cjs/loader.js:1025:10)","    at internal/main/run_main_module.js:17:11"]}
+[36mlocalstack_1  |[0m [32mSTART RequestId: 1ed14f12-3c01-1a80-c699-dcba037129e2 Version: $LATEST[0m
+[36mlocalstack_1  |[0m [32mEND RequestId: 1ed14f12-3c01-1a80-c699-dcba037129e2[0m
+[36mlocalstack_1  |[0m [32mREPORT RequestId: 1ed14f12-3c01-1a80-c699-dcba037129e2	Init Duration: 2268.44 ms	Duration: 0.29 ms	Billed Duration: 100 ms	Memory Size: 1536 MB	Max Memory Used: 0 MB	[0m
+[36mlocalstack_1  |[0m Starting daemons...
+[36mlocalstack_1  |[0m Starting server loop on UDP port 2000
+[36mlocalstack_1  |[0m Starting DNS server loop on UDP port 53
+[36mlocalstack_1  |[0m 
+[36mlocalstack_1  |[0m 
+Stopping repro_localstack_1 ... 
+[1A[2KStopping repro_localstack_1 ... [32mdone[0m[1BGracefully stopping... (press Ctrl+C again to force)
